@@ -1,0 +1,431 @@
+[
+    {
+        "question": "Which feature is used to predict loan default and represents the age of the borrower?",
+        "options": [
+            "A) Income",
+            "B) Credit Score",
+            "C) Loan Amount",
+            "D) Age",
+            "E) Employment Length"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "What is the drift score for the Income feature?",
+        "options": [
+            "A) 0.03883719590118",
+            "B) 0.130772018665271",
+            "C) 0.0778065393961156",
+            "D) 0.06465984187565631",
+            "E) 0.06991922445224397"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which feature has the highest SHAP value in the current data for predicting loan default?",
+        "options": [
+            "A) Loan Amount",
+            "B) Loan Term",
+            "C) Credit Score",
+            "D) Age",
+            "E) Income"
+        ],
+        "answer": "E"
+    },
+    {
+        "question": "Which statistical test is used for distribution drift analysis in this report?",
+        "options": [
+            "A) Chi-Square Test",
+            "B) T-Test",
+            "C) ANOVA",
+            "D) Kullback-Leibler Divergence",
+            "E) Mann-Whitney U Test"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "What is the type of the Home Ownership feature?",
+        "options": [
+            "A) Numerical",
+            "B) Categorical",
+            "C) Ordinal",
+            "D) Binary",
+            "E) Continuous"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which feature shows the most significant drift in the report?",
+        "options": [
+            "A) Age",
+            "B) Credit Score",
+            "C) Marital Status",
+            "D) Loan Amount",
+            "E) Loan Term"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "What is the maximum value for the Credit Score feature?",
+        "options": [
+            "A) 700",
+            "B) 800",
+            "C) 850",
+            "D) 900",
+            "E) 950"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "Which feature's current distribution indicates higher frequencies in the middle age ranges?",
+        "options": [
+            "A) Income",
+            "B) Age",
+            "C) Credit Score",
+            "D) Loan Term",
+            "E) Interest Rate"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which feature has the lowest SHAP value in both training and current data?",
+        "options": [
+            "A) Home Ownership",
+            "B) Dependents",
+            "C) Marital Status",
+            "D) Interest Rate",
+            "E) Loan Term"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "Which feature is represented as 0 (Rent), 1 (Own), or 2 (Mortgage)?",
+        "options": [
+            "A) Dependents",
+            "B) Marital Status",
+            "C) Home Ownership",
+            "D) Loan Term",
+            "E) Employment Length"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "What is the minimum value for the Interest Rate feature?",
+        "options": [
+            "A) 3.5%",
+            "B) 5%",
+            "C) 10%",
+            "D) 15%",
+            "E) 20%"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "Which feature had the most significant increase in SHAP value from training to current data?",
+        "options": [
+            "A) Age",
+            "B) Income",
+            "C) Marital Status",
+            "D) Dependents",
+            "E) Home Ownership"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "What is the range of values for the Loan Term feature?",
+        "options": [
+            "A) 6 to 48 months",
+            "B) 12 to 60 months",
+            "C) 18 to 72 months",
+            "D) 24 to 84 months",
+            "E) 30 to 90 months"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which feature indicates the annual income of the borrower?",
+        "options": [
+            "A) Age",
+            "B) Credit Score",
+            "C) Loan Amount",
+            "D) Income",
+            "E) Employment Length"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "Which feature showed significant drift and is now the second most important feature in current data?",
+        "options": [
+            "A) Loan Term",
+            "B) Employment Length",
+            "C) Home Ownership",
+            "D) Marital Status",
+            "E) Interest Rate"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "What method is used for feature attribution analysis in this report?",
+        "options": [
+            "A) LIME",
+            "B) Random Forest",
+            "C) Logistic Regression",
+            "D) Tree SHAP",
+            "E) KNN"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "Which feature represents the number of dependents of the borrower?",
+        "options": [
+            "A) Loan Term",
+            "B) Interest Rate",
+            "C) Dependents",
+            "D) Marital Status",
+            "E) Employment Length"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "Which feature showed significant drift and an increase in SHAP value from rank 6 to rank 4?",
+        "options": [
+            "A) Age",
+            "B) Income",
+            "C) Marital Status",
+            "D) Dependents",
+            "E) Home Ownership"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "What is the drift score for the Credit Score feature?",
+        "options": [
+            "A) 0.03883719590118",
+            "B) 0.130772018665271",
+            "C) 0.0778065393961156",
+            "D) 0.06465984187565631",
+            "E) 0.06991922445224397"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "Which feature's SHAP value indicated it was the third most significant factor during training?",
+        "options": [
+            "A) Income",
+            "B) Age",
+            "C) Credit Score",
+            "D) Loan Term",
+            "E) Interest Rate"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which feature is represented as 0 (Single), 1 (Married), 2 (Divorced), or 3 (Widowed)?",
+        "options": [
+            "A) Dependents",
+            "B) Marital Status",
+            "C) Home Ownership",
+            "D) Loan Term",
+            "E) Employment Length"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "What is the data type for the Employment Length feature?",
+        "options": [
+            "A) float",
+            "B) string",
+            "C) int",
+            "D) boolean",
+            "E) categorical"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "What is the range of values for the Credit Score feature?",
+        "options": [
+            "A) 300 to 850",
+            "B) 400 to 900",
+            "C) 500 to 1000",
+            "D) 600 to 1100",
+            "E) 700 to 1200"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "Which feature's SHAP value ranked 5th in the training data?",
+        "options": [
+            "A) Income",
+            "B) Age",
+            "C) Credit Score",
+            "D) Loan Term",
+            "E) Interest Rate"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "What is the drift score for the Loan Term feature?",
+        "options": [
+            "A) 0.03883719590118",
+            "B) 0.130772018665271",
+            "C) 0.0778065393961156",
+            "D) 0.06465984187565631",
+            "E) 0.06991922445224397"
+        ],
+        "answer": "E"
+    },
+    {
+        "question": "Which feature has a possible value range of 12 to 60 months?",
+        "options": [
+            "A) Interest Rate",
+            "B) Loan Term",
+            "C) Credit Score",
+            "D) Age",
+            "E) Income"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "What is the highest SHAP value rank for the Income feature in the current data?",
+        "options": [
+            "A) Rank 1",
+            "B) Rank 2",
+            "C) Rank 3",
+            "D) Rank 4",
+            "E) Rank 5"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "Which feature represents the amount requested by the borrower, ranging from $1,000 to $50,000?",
+        "options": [
+            "A) Income",
+            "B) Loan Amount",
+            "C) Credit Score",
+            "D) Age",
+            "E) Employment Length"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "What is the Kullback-Leibler divergence score for detecting drift in the Age feature?",
+        "options": [
+            "A) 0.03883719590118",
+            "B) 0.130772018665271",
+            "C) 0.0778065393961156",
+            "D) 0.06465984187565631",
+            "E) 0.06991922445224397"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "Which feature's distribution showed a higher concentration around mid-range amounts?",
+        "options": [
+            "A) Age",
+            "B) Loan Amount",
+            "C) Credit Score",
+            "D) Income",
+            "E) Employment Length"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which feature's SHAP value decreased slightly in the current data, indicating reduced impact?",
+        "options": [
+            "A) Loan Term",
+            "B) Employment Length",
+            "C) Home Ownership",
+            "D) Interest Rate",
+            "E) Marital Status"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "What is the range of values for the Dependents feature?",
+        "options": [
+            "A) 0 to 2",
+            "B) 0 to 3",
+            "C) 0 to 4",
+            "D) 0 to 5",
+            "E) 0 to 6"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "Which feature shows no significant drift and consistent SHAP values in predicting loan defaults?",
+        "options": [
+            "A) Income",
+            "B) Age",
+            "C) Credit Score",
+            "D) Loan Amount",
+            "E) Employment Length"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "Which feature is described as 'Number of years the borrower has been employed'?",
+        "options": [
+            "A) Age",
+            "B) Credit Score",
+            "C) Loan Amount",
+            "D) Employment Length",
+            "E) Marital Status"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "What is the drift score for the Employment Length feature?",
+        "options": [
+            "A) 0.03883719590118",
+            "B) 0.130772018665271",
+            "C) 0.0778065393961156",
+            "D) 0.06465984187565631",
+            "E) 0.10422809774139326"
+        ],
+        "answer": "E"
+    },
+    {
+        "question": "Which feature's SHAP value rank remained consistent between training and current data?",
+        "options": [
+            "A) Age",
+            "B) Income",
+            "C) Marital Status",
+            "D) Loan Amount",
+            "E) Dependents"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "Which feature represents the interest rate of the loan in percentage?",
+        "options": [
+            "A) Loan Term",
+            "B) Loan Amount",
+            "C) Interest Rate",
+            "D) Age",
+            "E) Income"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "What is the drift score for the Marital Status feature?",
+        "options": [
+            "A) 0.18557356469873026",
+            "B) 5.655843738731566",
+            "C) 0.1290888567959812",
+            "D) 0.10422809774139326",
+            "E) 0.12211093048448328"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which feature's current distribution shows a higher concentration of borrowers with shorter employment durations?",
+        "options": [
+            "A) Age",
+            "B) Income",
+            "C) Loan Amount",
+            "D) Employment Length",
+            "E) Marital Status"
+        ],
+        "answer": "D"
+    }
+]

@@ -1,0 +1,198 @@
+[
+    {
+      "question": "What is the age range of individuals in the dataset?",
+      "options": ["A) 18 to 70", "B) 20 to 70", "C) 18 to 65", "D) 21 to 65", "E) 18 to 60"],
+      "answer": "C"
+    },
+    {
+      "question": "Which feature has shown the highest drift score?",
+      "options": ["A) Age", "B) Income", "C) Education Level", "D) Employment Status", "E) Marital Status"],
+      "answer": "E"
+    },
+    {
+      "question": "What is the possible range of annual income in the dataset?",
+      "options": ["A) $20,000 to $70,000", "B) $30,000 to $80,000", "C) $10,000 to $90,000", "D) $25,000 to $75,000", "E) $15,000 to $85,000"],
+      "answer": "A"
+    },
+    {
+      "question": "Which feature has increased in importance from rank 4 to rank 3 in the current data?",
+      "options": ["A) Age", "B) Income", "C) Education Level", "D) Employment Status", "E) Marital Status"],
+      "answer": "E"
+    },
+    {
+      "question": "What is the SHAP value of Age in the current data?",
+      "options": ["A) 0.169", "B) 0.249", "C) 0.068", "D) 0.101", "E) 0.111"],
+      "answer": "D"
+    },
+    {
+      "question": "Which feature remains the most important in predicting program eligibility?",
+      "options": ["A) Age", "B) Income", "C) Education Level", "D) Employment Status", "E) Marital Status"],
+      "answer": "B"
+    },
+    {
+      "question": "Which statistical test was used for distribution drift analysis?",
+      "options": ["A) Kullback-Leibler divergence", "B) Chi-Square test", "C) ANOVA", "D) T-test", "E) Mann-Whitney U test"],
+      "answer": "A"
+    },
+    {
+      "question": "What was the drift score for the Employment Status feature?",
+      "options": ["A) 0.063", "B) 0.797", "C) 0.185", "D) 0.705", "E) 0.803"],
+      "answer": "D"
+    },
+    {
+      "question": "How many possible values does the Education Level feature have?",
+      "options": ["A) 2", "B) 3", "C) 4", "D) 5", "E) 6"],
+      "answer": "C"
+    },
+    {
+      "question": "What does a SHAP value indicate in this analysis?",
+      "options": ["A) Feature distribution", "B) Feature drift", "C) Feature importance", "D) Data variability", "E) Model accuracy"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the drift score for the Age feature?",
+      "options": ["A) 0.063", "B) 0.185", "C) 0.249", "D) 0.705", "E) 0.803"],
+      "answer": "A"
+    },
+    {
+      "question": "Which feature has decreased in rank from 3 to 4 in the current data?",
+      "options": ["A) Age", "B) Income", "C) Education Level", "D) Employment Status", "E) Marital Status"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the label variable in this dataset?",
+      "options": ["A) Age", "B) Income", "C) Education Level", "D) Employment Status", "E) ProgramEligibility"],
+      "answer": "E"
+    },
+    {
+      "question": "Which feature shows no significant drift detected?",
+      "options": ["A) Age", "B) Income", "C) Education Level", "D) Employment Status", "E) Marital Status"],
+      "answer": "A"
+    },
+    {
+      "question": "Which method was used for feature attribution analysis?",
+      "options": ["A) Kullback-Leibler divergence", "B) Chi-Square test", "C) ANOVA", "D) Tree SHAP", "E) Mann-Whitney U test"],
+      "answer": "D"
+    },
+    {
+      "question": "What is the SHAP value of Income in the current data?",
+      "options": ["A) 0.169", "B) 0.249", "C) 0.068", "D) 0.101", "E) 0.111"],
+      "answer": "B"
+    },
+    {
+      "question": "Which feature has a drift score of 0.185?",
+      "options": ["A) Age", "B) Income", "C) Education Level", "D) Employment Status", "E) Marital Status"],
+      "answer": "C"
+    },
+    {
+      "question": "What is the age range of individuals in the reference distribution?",
+      "options": ["A) 18 to 65", "B) 20 to 65", "C) 18 to 70", "D) 21 to 65", "E) 18 to 60"],
+      "answer": "A"
+    },
+    {
+      "question": "How has the importance of Education Level changed in the current data?",
+      "options": ["A) Increased", "B) Decreased", "C) Stayed the same", "D) Not applicable", "E) Not analyzed"],
+      "answer": "B"
+    },
+    {
+      "question": "Which feature shows the highest variability in the current distribution?",
+      "options": ["A) Age", "B) Income", "C) Education Level", "D) Employment Status", "E) Marital Status"],
+      "answer": "B"
+    },
+    {
+      "question": "Which feature has shown an increase in SHAP value in the current data?",
+      "options": ["A) Age", "B) Income", "C) Education Level", "D) Employment Status", "E) Marital Status"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the drift score for Marital Status?",
+      "options": ["A) 0.063", "B) 0.797", "C) 0.185", "D) 0.705", "E) 0.803"],
+      "answer": "E"
+    },
+    {
+      "question": "What is the most frequent education level in the current distribution?",
+      "options": ["A) No formal education", "B) High school diploma", "C) Bachelor degree", "D) Graduate degree", "E) None"],
+      "answer": "C"
+    },
+    {
+      "question": "Which feature remains the least important in predicting program eligibility?",
+      "options": ["A) Age", "B) Income", "C) Education Level", "D) Employment Status", "E) Marital Status"],
+      "answer": "D"
+    },
+    {
+      "question": "How has the importance of Marital Status changed in the current data?",
+      "options": ["A) Increased", "B) Decreased", "C) Stayed the same", "D) Not applicable", "E) Not analyzed"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the SHAP value of Employment Status in the current data?",
+      "options": ["A) 0.018", "B) 0.011", "C) 0.068", "D) 0.101", "E) 0.111"],
+      "answer": "B"
+    },
+    {
+      "question": "Which feature has shown the most significant change in SHAP value in the current data?",
+      "options": ["A) Age", "B) Income", "C) Education Level", "D) Employment Status", "E) Marital Status"],
+      "answer": "B"
+    },
+    {
+      "question": "What is the SHAP value of Education Level in the current data?",
+      "options": ["A) 0.018", "B) 0.011", "C) 0.068", "D) 0.101", "E) 0.111"],
+      "answer": "C"
+    },
+    {
+      "question": "Which feature shows a shift towards part-time employment in the current distribution?",
+      "options": ["A) Age", "B) Income", "C) Education Level", "D) Employment Status", "E) Marital Status"],
+      "answer": "D"
+    },
+    {
+      "question": "What is the SHAP value of Marital Status in the current data?",
+      "options": ["A) 0.018", "B) 0.011", "C) 0.068", "D) 0.101", "E) 0.100"],
+      "answer": "E"
+    },
+    {
+      "question": "Which feature has shown a significant drop in the number of individuals with no formal education or a graduate degree?",
+      "options": ["A) Age", "B) Income", "C) Education Level", "D) Employment Status", "E) Marital Status"],
+      "answer": "C"
+    },
+    {
+      "question": "Which feature has remained consistently the second most important in predicting program eligibility?",
+      "options": ["A) Age", "B) Income", "C) Education Level", "D) Employment Status", "E) Marital Status"],
+      "answer": "A"
+    },
+    {
+      "question": "What was the SHAP value of Income in the training data?",
+      "options": ["A) 0.169", "B) 0.249", "C) 0.068", "D) 0.101", "E) 0.111"],
+      "answer": "A"
+    },
+    {
+      "question": "What is the drift score for the Education Level feature?",
+      "options": ["A) 0.063", "B) 0.797", "C) 0.185", "D) 0.705", "E) 0.803"],
+      "answer": "C"
+    },
+    {
+      "question": "Which feature has experienced a demographic shift towards more single and divorced individuals?",
+      "options": ["A) Age", "B) Income", "C) Education Level", "D) Employment Status", "E) Marital Status"],
+      "answer": "E"
+    },
+    {
+      "question": "What was the SHAP value of Age in the training data?",
+      "options": ["A) 0.169", "B) 0.249", "C) 0.068", "D) 0.101", "E) 0.167"],
+      "answer": "E"
+    },
+    {
+      "question": "What feature shows the highest drift score?",
+      "options": ["A) Age", "B) Income", "C) Education Level", "D) Employment Status", "E) Marital Status"],
+      "answer": "E"
+    },
+    {
+      "question": "What was the drift score for Income?",
+      "options": ["A) 0.063", "B) 0.797", "C) 0.185", "D) 0.705", "E) 0.803"],
+      "answer": "B"
+    },
+    {
+      "question": "Which feature shows a shift towards mid-level education in the current distribution?",
+      "options": ["A) Age", "B) Income", "C) Education Level", "D) Employment Status", "E) Marital Status"],
+      "answer": "C"
+    }
+  ]
+  

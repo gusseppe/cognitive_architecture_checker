@@ -1,0 +1,192 @@
+[
+  {
+    "question": "What is the label variable in the weather patterns simulation data?",
+    "options": ["A) Temperature", "B) Humidity", "C) Wind Speed", "D) Severe Weather", "E) Precipitation"],
+    "answer": "D"
+  },
+  {
+    "question": "Which feature had the highest SHAP value in the training data?",
+    "options": ["A) Temperature", "B) Humidity", "C) Wind Speed", "D) Precipitation", "E) Weather Condition"],
+    "answer": "E"
+  },
+  {
+    "question": "What is the Kullback-Leibler drift score for Temperature?",
+    "options": ["A) 0.0543", "B) 0.1041", "C) 0.1409", "D) 0.2589", "E) 0.5537"],
+    "answer": "A"
+  },
+  {
+    "question": "Which feature showed no significant distribution drift?",
+    "options": ["A) Humidity", "B) Wind Speed", "C) Temperature", "D) Precipitation", "E) Weather Condition"],
+    "answer": "C"
+  },
+  {
+    "question": "Which statistical test was used for distribution drift analysis?",
+    "options": ["A) Mann-Whitney U", "B) Kolmogorov-Smirnov", "C) T-test", "D) Kullback-Leibler divergence", "E) Chi-square"],
+    "answer": "D"
+  },
+  {
+    "question": "What type of data is the 'Weather Condition' feature?",
+    "options": ["A) Categorical", "B) Numerical", "C) Ordinal", "D) Binary", "E) Nominal"],
+    "answer": "A"
+  },
+  {
+    "question": "What was the rank of Humidity in the SHAP feature attribution analysis for the current data?",
+    "options": ["A) 1", "B) 2", "C) 3", "D) 4", "E) 5"],
+    "answer": "D"
+  },
+  {
+    "question": "Which feature had a SHAP value of 0.03362271130023157 in the current data?",
+    "options": ["A) Temperature", "B) Humidity", "C) Wind Speed", "D) Precipitation", "E) Weather Condition"],
+    "answer": "D"
+  },
+  {
+    "question": "What is the drift score for Precipitation?",
+    "options": ["A) 0.0543", "B) 0.1041", "C) 0.1409", "D) 0.2589", "E) 0.5537"],
+    "answer": "D"
+  },
+  {
+    "question": "In the current data, which feature's SHAP value increased compared to the training data?",
+    "options": ["A) Temperature", "B) Humidity", "C) Wind Speed", "D) Precipitation", "E) Weather Condition"],
+    "answer": "B"
+  },
+  {
+    "question": "What is the range of possible values for Temperature?",
+    "options": ["A) -20 to 50", "B) -10 to 40", "C) 0 to 30", "D) 0 to 100", "E) -5 to 45"],
+    "answer": "B"
+  },
+  {
+    "question": "Which feature had the second highest SHAP value in both training and current data?",
+    "options": ["A) Temperature", "B) Humidity", "C) Wind Speed", "D) Precipitation", "E) Weather Condition"],
+    "answer": "A"
+  },
+  {
+    "question": "What is the detection status of drift for Wind Speed?",
+    "options": ["A) No drift detected", "B) Drift detected", "C) Inconclusive", "D) Not analyzed", "E) Minor drift detected"],
+    "answer": "B"
+  },
+  {
+    "question": "What is the numerical type of the 'Humidity' feature?",
+    "options": ["A) Integer", "B) Float", "C) Boolean", "D) String", "E) Categorical"],
+    "answer": "B"
+  },
+  {
+    "question": "Which feature had the lowest SHAP value in the training data?",
+    "options": ["A) Temperature", "B) Humidity", "C) Wind Speed", "D) Precipitation", "E) Weather Condition"],
+    "answer": "D"
+  },
+  {
+    "question": "What is the range of possible values for Wind Speed?",
+    "options": ["A) 0 to 20", "B) 0 to 25", "C) 0 to 30", "D) 0 to 35", "E) 0 to 40"],
+    "answer": "C"
+  },
+  {
+    "question": "What was the SHAP value for Wind Speed in the training data?",
+    "options": ["A) 0.1485", "B) 0.0859", "C) 0.1159", "D) 0.0374", "E) 0.1825"],
+    "answer": "C"
+  },
+  {
+    "question": "What is the detection status of drift for Humidity?",
+    "options": ["A) No drift detected", "B) Drift detected", "C) Inconclusive", "D) Not analyzed", "E) Minor drift detected"],
+    "answer": "B"
+  },
+  {
+    "question": "What is the range of possible values for Humidity?",
+    "options": ["A) 0 to 50", "B) 0 to 80", "C) 0 to 90", "D) 0 to 100", "E) 0 to 120"],
+    "answer": "D"
+  },
+  {
+    "question": "What is the Kullback-Leibler drift score for Wind Speed?",
+    "options": ["A) 0.0543", "B) 0.1041", "C) 0.1409", "D) 0.2589", "E) 0.5537"],
+    "answer": "B"
+  },
+  {
+    "question": "Which feature's current SHAP value was 0.175580806202321?",
+    "options": ["A) Temperature", "B) Humidity", "C) Wind Speed", "D) Precipitation", "E) Weather Condition"],
+    "answer": "E"
+  },
+  {
+    "question": "What is the current SHAP value for Temperature?",
+    "options": ["A) 0.1485", "B) 0.0859", "C) 0.1159", "D) 0.1297", "E) 0.1825"],
+    "answer": "D"
+  },
+  {
+    "question": "Which feature had a distribution peak around 14 degrees Celsius in the current data?",
+    "options": ["A) Humidity", "B) Wind Speed", "C) Temperature", "D) Precipitation", "E) Weather Condition"],
+    "answer": "C"
+  },
+  {
+    "question": "What was the rank of Precipitation in the SHAP feature attribution analysis for the training data?",
+    "options": ["A) 1", "B) 2", "C) 3", "D) 4", "E) 5"],
+    "answer": "E"
+  },
+  {
+    "question": "Which feature showed an increase in moderate values (50-150 mm) in the current data?",
+    "options": ["A) Temperature", "B) Humidity", "C) Wind Speed", "D) Precipitation", "E) Weather Condition"],
+    "answer": "D"
+  },
+  {
+    "question": "What is the Kullback-Leibler drift score for Humidity?",
+    "options": ["A) 0.0543", "B) 0.1041", "C) 0.1409", "D) 0.2589", "E) 0.5537"],
+    "answer": "C"
+  },
+  {
+    "question": "What is the rank of Wind Speed in the SHAP feature attribution analysis for the current data?",
+    "options": ["A) 1", "B) 2", "C) 3", "D) 4", "E) 5"],
+    "answer": "C"
+  },
+  {
+    "question": "Which feature had a current SHAP value of 0.11466833382199101?",
+    "options": ["A) Temperature", "B) Humidity", "C) Wind Speed", "D) Precipitation", "E) Weather Condition"],
+    "answer": "C"
+  },
+  {
+    "question": "What is the detection status of drift for Weather Condition?",
+    "options": ["A) No drift detected", "B) Drift detected", "C) Inconclusive", "D) Not analyzed", "E) Minor drift detected"],
+    "answer": "B"
+  },
+  {
+    "question": "Which feature showed a more balanced occurrence across categories in the current data compared to the reference distribution?",
+    "options": ["A) Temperature", "B) Humidity", "C) Wind Speed", "D) Precipitation", "E) Weather Condition"],
+    "answer": "E"
+  },
+  {
+    "question": "What was the drift score for Weather Condition?",
+    "options": ["A) 0.0543", "B) 0.1041", "C) 0.1409", "D) 0.2589", "E) 0.5537"],
+    "answer": "E"
+  },
+  {
+    "question": "What was the rank of Temperature in the SHAP feature attribution analysis for the current data?",
+    "options": ["A) 1", "B) 2", "C) 3", "D) 4", "E) 5"],
+    "answer": "B"
+  },
+  {
+    "question": "What is the numerical type of the 'Wind Speed' feature?",
+    "options": ["A) Integer", "B) Float", "C) Boolean", "D) String", "E) Categorical"],
+    "answer": "B"
+  },
+  {
+    "question": "Which feature showed a higher concentration around mid-range values (35-60%) in the current data?",
+    "options": ["A) Temperature", "B) Humidity", "C) Wind Speed", "D) Precipitation", "E) Weather Condition"],
+    "answer": "B"
+  },
+  {
+    "question": "Which method was used for feature attribution analysis?",
+    "options": ["A) LIME", "B) SHAP", "C) Permutation Importance", "D) Gain", "E) Dropout Loss"],
+    "answer": "B"
+  },
+  {
+    "question": "What was the rank of Wind Speed in the SHAP feature attribution analysis for the training data?",
+    "options": ["A) 1", "B) 2", "C) 3", "D) 4", "E) 5"],
+    "answer": "C"
+  },
+  {
+    "question": "Which feature's SHAP value was 0.14850434817298516 in the training data?",
+    "options": ["A) Temperature", "B) Humidity", "C) Wind Speed", "D) Precipitation", "E) Weather Condition"],
+    "answer": "A"
+  },
+  {
+    "question": "What is the range of possible values for Precipitation?",
+    "options": ["A) 0 to 100", "B) 0 to 150", "C) 0 to 200", "D) 0 to 250", "E) 0 to 300"],
+    "answer": "C"
+  }
+]

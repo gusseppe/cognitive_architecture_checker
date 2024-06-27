@@ -1,0 +1,197 @@
+[
+  {
+    "question": "What is the label variable used in the dataset?",
+    "options": ["A) Age", "B) BMI", "C) Blood Pressure", "D) ChronicCondition", "E) Income"],
+    "answer": "D"
+  },
+  {
+    "question": "What statistical test was used for the distribution drift analysis?",
+    "options": ["A) Chi-square test", "B) Kullback-Leibler divergence", "C) T-test", "D) ANOVA", "E) Mann-Whitney U test"],
+    "answer": "B"
+  },
+  {
+    "question": "What is the drift score for the Age feature?",
+    "options": ["A) 0.11257326919665277", "B) 0.3295963763250584", "C) 0.23450676168929094", "D) 0.03778629771302727", "E) 7.48442577690803"],
+    "answer": "D"
+  },
+  {
+    "question": "What method was used for feature attribution analysis?",
+    "options": ["A) LIME", "B) Tree SHAP", "C) Grad-CAM", "D) Integrated Gradients", "E) Permutation Importance"],
+    "answer": "B"
+  },
+  {
+    "question": "Which feature has the highest SHAP value in the training data?",
+    "options": ["A) Age", "B) BMI", "C) Blood Pressure", "D) Income", "E) Physical Activity"],
+    "answer": "B"
+  },
+  {
+    "question": "What is the SHAP value for BMI in the current data?",
+    "options": ["A) 0.050937679805919664", "B) 0.053554968593565636", "C) 0.16781096493974235", "D) 0.04945714499086426", "E) 0.07730394004727022"],
+    "answer": "C"
+  },
+  {
+    "question": "What is the drift score for the BMI feature?",
+    "options": ["A) 0.03778629771302727", "B) 0.11257326919665277", "C) 0.23450676168929094", "D) 0.3295963763250584", "E) 7.48442577690803"],
+    "answer": "B"
+  },
+  {
+    "question": "What is the highest possible value for the Age feature?",
+    "options": ["A) 80", "B) 85", "C) 90", "D) 95", "E) 100"],
+    "answer": "C"
+  },
+  {
+    "question": "What is the SHAP value for Blood Pressure in the training data?",
+    "options": ["A) 0.08906002648096621", "B) 0.06594070343394506", "C) 0.07114418923716576", "D) 0.03926329553692529", "E) 0.013835053054035294"],
+    "answer": "C"
+  },
+  {
+    "question": "Which feature showed significant drift with a score of 0.3295963763250584?",
+    "options": ["A) Age", "B) BMI", "C) Blood Pressure", "D) Cholesterol", "E) Diet Quality"],
+    "answer": "C"
+  },
+  {
+    "question": "What is the SHAP value for Cholesterol in the current data?",
+    "options": ["A) 0.03926329553692529", "B) 0.011401517327642103", "C) 0.04945714499086426", "D) 0.06594070343394506", "E) 0.07730394004727022"],
+    "answer": "C"
+  },
+  {
+    "question": "Which feature has a drift score of 7.48442577690803?",
+    "options": ["A) Age", "B) BMI", "C) Blood Pressure", "D) Physical Activity", "E) Education Level"],
+    "answer": "D"
+  },
+  {
+    "question": "Which feature's SHAP value increased in the current data compared to the training data?",
+    "options": ["A) Age", "B) BMI", "C) Blood Pressure", "D) Physical Activity", "E) Smoking Status"],
+    "answer": "B"
+  },
+  {
+    "question": "Which feature showed no drift detected in its distribution analysis?",
+    "options": ["A) Age", "B) BMI", "C) Blood Pressure", "D) Cholesterol", "E) Physical Activity"],
+    "answer": "A"
+  },
+  {
+    "question": "What is the data type of the Diet Quality feature?",
+    "options": ["A) float", "B) int", "C) string", "D) bool", "E) categorical"],
+    "answer": "B"
+  },
+  {
+    "question": "What is the possible value range for the BMI feature?",
+    "options": ["A) 18 to 90", "B) 150 to 300", "C) 20k to 100k", "D) 18.5 to 40.0", "E) 0 to 7"],
+    "answer": "D"
+  },
+  {
+    "question": "Which feature has a SHAP value rank of 10 in both training and current data?",
+    "options": ["A) Age", "B) BMI", "C) Blood Pressure", "D) Smoking Status", "E) Family History"],
+    "answer": "D"
+  },
+  {
+    "question": "Which feature has a drift score of 0.0018915553873695345?",
+    "options": ["A) Age", "B) BMI", "C) Blood Pressure", "D) Diet Quality", "E) Physical Activity"],
+    "answer": "D"
+  },
+  {
+    "question": "What is the SHAP value for Family History in the training data?",
+    "options": ["A) 0.01724435122228072", "B) 0.018126868998631664", "C) 0.011401517327642103", "D) 0.016434074575538762", "E) 0.06594070343394506"],
+    "answer": "A"
+  },
+  {
+    "question": "Which feature's SHAP value remained consistent at 0.016434074575538762?",
+    "options": ["A) Age", "B) BMI", "C) Blood Pressure", "D) Education Level", "E) Income"],
+    "answer": "D"
+  },
+  {
+    "question": "Which feature showed a significant decrease in its influence on predicting chronic conditions over time?",
+    "options": ["A) Age", "B) BMI", "C) Physical Activity", "D) Income", "E) Family History"],
+    "answer": "C"
+  },
+  {
+    "question": "Which feature has a SHAP value rank of 2 in the current data?",
+    "options": ["A) Age", "B) BMI", "C) Blood Pressure", "D) Income", "E) Physical Activity"],
+    "answer": "D"
+  },
+  {
+    "question": "What is the drift score for the Education Level feature?",
+    "options": ["A) 0.23450676168929094", "B) 0.11257326919665277", "C) 1.6716891527291513", "D) 0.3295963763250584", "E) 0.91626108741935"],
+    "answer": "C"
+  },
+  {
+    "question": "What is the highest possible value for the Cholesterol feature?",
+    "options": ["A) 100", "B) 150", "C) 200", "D) 250", "E) 300"],
+    "answer": "E"
+  },
+  {
+    "question": "Which feature had the highest SHAP value in both training and current data?",
+    "options": ["A) Age", "B) BMI", "C) Blood Pressure", "D) Physical Activity", "E) Income"],
+    "answer": "B"
+  },
+  {
+    "question": "What is the possible value range for the Physical Activity feature?",
+    "options": ["A) 18 to 90", "B) 150 to 300", "C) 20k to 100k", "D) 18.5 to 40.0", "E) 0 to 7"],
+    "answer": "E"
+  },
+  {
+    "question": "What is the data type of the Income feature?",
+    "options": ["A) float", "B) int", "C) string", "D) bool", "E) categorical"],
+    "answer": "A"
+  },
+  {
+    "question": "What is the interpretation of the distribution drift analysis for the Age feature?",
+    "options": ["A) Significant drift detected", "B) Minor drift detected", "C) No drift detected", "D) Data quality issues", "E) Inconsistent data"],
+    "answer": "C"
+  },
+  {
+    "question": "Which feature showed the highest drift score in the report?",
+    "options": ["A) Age", "B) BMI", "C) Blood Pressure", "D) Physical Activity", "E) Income"],
+    "answer": "D"
+  },
+  {
+    "question": "What is the SHAP value rank for Smoking Status in the current data?",
+    "options": ["A) 1", "B) 2", "C) 5", "D) 8", "E) 10"],
+    "answer": "E"
+  },
+  {
+    "question": "Which feature's SHAP value increased from 0.06594070343394506 to 0.12549868716954315?",
+    "options": ["A) Age", "B) BMI", "C) Blood Pressure", "D) Income", "E) Education Level"],
+    "answer": "D"
+  },
+  {
+    "question": "Which feature showed the least drift in the report?",
+    "options": ["A) Age", "B) BMI", "C) Blood Pressure", "D) Physical Activity", "E) Diet Quality"],
+    "answer": "E"
+  },
+  {
+    "question": "Which feature's SHAP value rank is consistent in both training and current data at rank 9?",
+    "options": ["A) Age", "B) BMI", "C) Blood Pressure", "D) Diet Quality", "E) Family History"],
+    "answer": "D"
+  },
+  {
+    "question": "What is the possible value range for the Blood Pressure feature?",
+    "options": ["A) 18 to 90", "B) 150 to 300", "C) 20k to 100k", "D) 80 to 180", "E) 0 to 7"],
+    "answer": "D"
+  },
+  {
+    "question": "Which feature has the highest possible value of 100,000?",
+    "options": ["A) Age", "B) BMI", "C) Blood Pressure", "D) Cholesterol", "E) Income"],
+    "answer": "E"
+  },
+  {
+    "question": "What is the description of the ChronicCondition label?",
+    "options": ["A) Likelihood of developing a chronic condition", "B) Age of the individual", "C) Total cholesterol level", "D) Smoking status", "E) Quality of diet"],
+    "answer": "A"
+  },
+  {
+    "question": "Which feature showed a significant decrease in the SHAP value from the training to the current data?",
+    "options": ["A) Age", "B) BMI", "C) Blood Pressure", "D) Physical Activity", "E) Income"],
+    "answer": "D"
+  },
+  {
+    "question": "Which feature has a SHAP value rank of 6 in both training and current data?",
+    "options": ["A) Age", "B) BMI", "C) Blood Pressure", "D) Cholesterol", "E) Diet Quality"],
+    "answer": "D"
+  },
+  {
+    "question": "Which feature's SHAP value rank in the training data is 8?",
+    "options": ["A) Age", "B) Family History", "C) Blood Pressure", "D) Education Level", "E) Income"],
+    "answer": "D"
+  }
+]

@@ -1,0 +1,1 @@
+The final answer is that the significant changes between the two datasets are in the 'Humidity', 'Precipitation', and 'Weather Condition' columns, with drift scores above the threshold of 0.1. The SHAP values indicate that the 'Weather Condition' column has the highest impact on the model's predictions, followed by the 'Temperature' and 'Wind Speed' columns.
