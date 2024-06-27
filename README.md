@@ -2,8 +2,6 @@
 
 This repository contains the implementation of a cognitive architecture for monitoring machine learning models. The architecture leverages semantic, episodic, procedural, and working memory to generate interpretable reports for model monitoring.
 
-![Cognitive Architecture](imgs/ca.png)
-![Adaptive Fast and Slow Graphs](imgs/dp.png)
 
 ## Overview
 
@@ -32,6 +30,8 @@ Monitoring machine learning models in production is critical to ensure their per
 
 ## Cognitive Architecture
 
+![Cognitive Architecture](imgs/ca.png)
+
 The architecture consists of several components:
 
 - **Semantic Memory (SM)**: Stores generalized knowledge from training data, models, and tools.
@@ -40,6 +40,8 @@ The architecture consists of several components:
 - **Working Memory (WM)**: Holds the current context, integrating real-time data with insights from SM and EM.
 
 ### Decision Procedure
+
+![Adaptive Fast and Slow Graphs](imgs/dp.png)
 
 1. **Adaptive Fast Graph (S1)**:
     - Quickly generates insights (e.g., drift scores) using fast tools.
