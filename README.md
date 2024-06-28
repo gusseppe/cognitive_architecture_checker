@@ -10,7 +10,7 @@ Monitoring machine learning models in production is critical to ensure their per
 ## Repository Structure
 
 - **generate_dataset.ipynb**: Creates synthetic datasets designed to mimic real-world scenarios for drift distribution problems. It includes healthcare, eligibility, and financial datasets.
-- **benchmark.ipynb**: Runs all methods to create reports that are tested.
+- **benchmark_dataset.ipynb**: Runs all methods to create reports that are tested for each dataset.
 - **results.ipynb**: Contains the final plots and LaTeX tables with the results.
 - **datasets/**: Contains artifacts for each dataset, including reports, prompts, answers, and descriptions.
 - **cama/**: Core library implementing the cognitive architecture, including decision.py, insight.py, memory.py, and other necessary files.
@@ -20,10 +20,13 @@ Monitoring machine learning models in production is critical to ensure their per
 ## Usage
 
 1. **Generating Datasets**:
-    - Run `generate_dataset.ipynb` to create the synthetic datasets. This notebook generates features that mimic real-world data scenarios and stores them in the `datasets/` folder.
+    - Run `generate_dataset.ipynb` to create the synthetic datasets. This notebook generates features that mimic real-world data scenarios and stores them in the `datasets/` folder. In this case, it generated 3 datasets: healthcare, eligibility, and financial.
 
 2. **Benchmarking**:
-    - Execute `benchmark.ipynb` to run all methods and generate reports for testing.
+    - Execute `benchmark_healthcare.ipynb` to run all methods related to healthcare scenarios and generate reports on testing. This data has features like BMI and Blood Pressure to reflect rising obesity and hypertension rates.
+    - Execute `benchmark_eligibility.ipynb` to run all methods related to eligibility scenarios and generate reports on testing. This data has attributes such as Income and Employment Status to simulate economic growth and changing employment patterns.
+    - Execute `benchmark_financial.ipynb` to run all methods related to financial scenarios and generate reports on testing. This data has features like Credit Score and Loan Amount to reflect inflation, changes in borrowing behavior, and variations in the economic climate.
+
 
 3. **Results Analysis**:
     - Use `results.ipynb` to visualize the results, including plots and LaTeX tables summarizing the final numbers.
