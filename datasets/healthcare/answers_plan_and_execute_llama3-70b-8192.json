@@ -1,0 +1,158 @@
+[
+    {
+        "question": "What is the label variable used in the dataset?",
+        "answer": "I DON'T KNOW"
+    },
+    {
+        "question": "What statistical test was used for the distribution drift analysis?",
+        "answer": "I DON'T KNOW"
+    },
+    {
+        "question": "What is the drift score for the Age feature?",
+        "answer": "I DON'T KNOW"
+    },
+    {
+        "question": "What method was used for feature attribution analysis?",
+        "answer": "I DON'T KNOW"
+    },
+    {
+        "question": "Which feature has the highest SHAP value in the training data?",
+        "answer": "I DON'T KNOW"
+    },
+    {
+        "question": "What is the SHAP value for BMI in the current data?",
+        "answer": "C"
+    },
+    {
+        "question": "What is the drift score for the BMI feature?",
+        "answer": "B"
+    },
+    {
+        "question": "What is the highest possible value for the Age feature?",
+        "answer": "I DON'T KNOW"
+    },
+    {
+        "question": "What is the SHAP value for Blood Pressure in the training data?",
+        "answer": "I DON'T KNOW"
+    },
+    {
+        "question": "Which feature showed significant drift with a score of 0.3295963763250584?",
+        "answer": "C"
+    },
+    {
+        "question": "What is the SHAP value for Cholesterol in the current data?",
+        "answer": "I DON'T KNOW"
+    },
+    {
+        "question": "Which feature has a drift score of 7.48442577690803?",
+        "answer": "D"
+    },
+    {
+        "question": "Which feature's SHAP value increased in the current data compared to the training data?",
+        "answer": "B"
+    },
+    {
+        "question": "Which feature showed no drift detected in its distribution analysis?",
+        "answer": "A"
+    },
+    {
+        "question": "What is the data type of the Diet Quality feature?",
+        "answer": "I DON'T KNOW"
+    },
+    {
+        "question": "What is the possible value range for the BMI feature?",
+        "answer": "I DON'T KNOW"
+    },
+    {
+        "question": "Which feature has a SHAP value rank of 10 in both training and current data?",
+        "answer": "I DON'T KNOW"
+    },
+    {
+        "question": "Which feature has a drift score of 0.0018915553873695345?",
+        "answer": "I DON'T KNOW"
+    },
+    {
+        "question": "What is the SHAP value for Family History in the training data?",
+        "answer": "I DON'T KNOW"
+    },
+    {
+        "question": "Which feature's SHAP value remained consistent at 0.016434074575538762?",
+        "answer": "I DON'T KNOW"
+    },
+    {
+        "question": "Which feature showed a significant decrease in its influence on predicting chronic conditions over time?",
+        "answer": "C"
+    },
+    {
+        "question": "Which feature has a SHAP value rank of 2 in the current data?",
+        "answer": "B"
+    },
+    {
+        "question": "What is the drift score for the Education Level feature?",
+        "answer": "C"
+    },
+    {
+        "question": "What is the highest possible value for the Cholesterol feature?",
+        "answer": "I DON'T KNOW"
+    },
+    {
+        "question": "Which feature had the highest SHAP value in both training and current data?",
+        "answer": "I DON'T KNOW"
+    },
+    {
+        "question": "What is the possible value range for the Physical Activity feature?",
+        "answer": "E"
+    },
+    {
+        "question": "What is the data type of the Income feature?",
+        "answer": "I DON'T KNOW"
+    },
+    {
+        "question": "What is the interpretation of the distribution drift analysis for the Age feature?",
+        "answer": "C"
+    },
+    {
+        "question": "Which feature showed the highest drift score in the report?",
+        "answer": "D"
+    },
+    {
+        "question": "What is the SHAP value rank for Smoking Status in the current data?",
+        "answer": "I DON'T KNOW"
+    },
+    {
+        "question": "Which feature's SHAP value increased from 0.06594070343394506 to 0.12549868716954315?",
+        "answer": "D"
+    },
+    {
+        "question": "Which feature showed the least drift in the report?",
+        "answer": "I DON'T KNOW"
+    },
+    {
+        "question": "Which feature's SHAP value rank is consistent in both training and current data at rank 9?",
+        "answer": "I DON'T KNOW"
+    },
+    {
+        "question": "What is the possible value range for the Blood Pressure feature?",
+        "answer": "I DON'T KNOW"
+    },
+    {
+        "question": "Which feature has the highest possible value of 100,000?",
+        "answer": "E"
+    },
+    {
+        "question": "What is the description of the ChronicCondition label?",
+        "answer": "I DON'T KNOW"
+    },
+    {
+        "question": "Which feature showed a significant decrease in the SHAP value from the training to the current data?",
+        "answer": "D"
+    },
+    {
+        "question": "Which feature has a SHAP value rank of 6 in both training and current data?",
+        "answer": "I DON'T KNOW"
+    },
+    {
+        "question": "Which feature's SHAP value rank in the training data is 8?",
+        "answer": "I DON'T KNOW"
+    }
+]

@@ -1,0 +1,1 @@
+{"trace_id": null, "name": "ablation_simplify_compile_True", "total_tokens": 0, "elapsed_time": 28.116355, "ablation_config": {"simplify_compile": true}}

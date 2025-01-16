@@ -1,5 +1,6 @@
 import json
 import operator
+import os
 import re
 import textwrap
 from typing import Any, Annotated, Callable, Dict, List, Tuple, Union, Optional, TypedDict, Literal
@@ -29,6 +30,21 @@ from langgraph.prebuilt.tool_executor import ToolExecutor
 from langchain.tools.render import ToolsRenderer, render_text_description
 
 
+class ChatOpenRouter(ChatOpenAI):
+    openai_api_base: str
+    openai_api_key: str
+    model_name: str
+
+    def __init__(self,
+                 model_name: str,
+                 openai_api_key: Optional[str] = None,
+                 openai_api_base: str = "https://openrouter.ai/api/v1",
+                 **kwargs):
+        openai_api_key = openai_api_key or os.getenv('OPENROUTER_API_KEY')
+        super().__init__(openai_api_base=openai_api_base,
+                         openai_api_key=openai_api_key,
+                         model_name=model_name, **kwargs)
+        
 def print_function_name(func: Callable) -> Callable:
     def wrapper(*args, **kwargs):
         text = Text(f"Node: {func.__name__}", justify="center", style="bold white")
@@ -360,7 +376,7 @@ def get_answers_from_report_prompt(report: str, questions: List[Dict[str, str]])
                                       
     {escape_curly_braces(report)}
 
-    Your output should be in json format (```json and ``` tags) as follows:
+    Your output should be in json format (```json and ``` tags) and double qoutes "" as follows:
 
     [
       {escape_curly_braces({"question": "copy the question here", "answer": "A"})},
@@ -369,6 +385,7 @@ def get_answers_from_report_prompt(report: str, questions: List[Dict[str, str]])
       {escape_curly_braces({"question": "copy the question here", "answer": "C"})},
     ]
 
+    That is, a json with two keys: question (do not put the options here, only the question) and answer. The answer should be one of the options (A, B, C, D or E).
     Questions:
 
     """)
@@ -794,7 +811,7 @@ Thought:{agent_scratchpad}'''
         )
 
         final_report = ""
-        for event in self.graph.stream(initial_state):
+        for event in self.graph.stream(initial_state, {"recursion_limit": 14}):
             print(event)
             print("----")
             if isinstance(event, dict) and "agent_outcome" in event:

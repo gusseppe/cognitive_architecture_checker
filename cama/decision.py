@@ -3,7 +3,8 @@ import pickle
 from typing import Dict, Any, List, Callable
 from cama.memory import WorkingMemory, EpisodicMemory
 from cama.representation import get_dataset_representation, ToolRepresentation
-from cama.prompts import get_prompt_for_explanation, get_overview_report_prompt
+from cama.prompts import get_overview_report_prompt
+from cama.prompts import get_prompt_for_feature_explanation
 from langgraph.graph import StateGraph, END
 from rich import print
 from rich.panel import Panel
@@ -14,6 +15,12 @@ from docarray import DocList
 from cama.utils import print_function_name
 from cama.prompts import get_prompt_for_label_explanation
 from time import sleep
+from langfuse.callback import CallbackHandler
+from langchain_core.messages import AIMessage
+from concurrent.futures import ThreadPoolExecutor, as_completed
+import time
+import json
+
 
 class DecisionProcedure:
     def __init__(self, llm, debug=False):
@@ -139,48 +146,48 @@ class DecisionProcedure:
         dataset_representation = get_dataset_representation(state['semantic_memory'], state['slow_tools_results'])
         state['dataset_representation'] = dataset_representation
         return state
+    
 
-    def break_down(self, state: WorkingMemory) -> WorkingMemory:
-        list_outputs = list()
-
-        # Process the features
-        for index, feature in enumerate(state['dataset_representation'].features):
-            feature_name = feature.name
-            input_message = feature.as_dict()
-            input_dict = {
-                "input": input_message, 
-                'feature_name': feature_name, 
-                'dataset_title': state['dataset_representation'].name,
-                'dataset_description': state['dataset_representation'].description
-            }
-            final_prompt = get_prompt_for_explanation(state['semantic_memory'])
-            chain = final_prompt | self.llm
-            output = chain.invoke(input_dict)
-            sleep(1)
-            text = Text(f"Feature: {feature_name}", justify="left", style="bold yellow")
-            panel = Panel(text)
-            print(panel)
-            print(output.content)
-            print("\n", "="*100, "\n")
-            list_outputs.append({'feature': feature_name, 'report': output.content})
-            
+    def process_feature(self, feature, dataset_info: Dict, llm):
+        feature_info = feature.as_dict()
+        final_prompt = get_prompt_for_feature_explanation(feature_info, dataset_info)
+        chain = final_prompt | llm
+        output = chain.invoke({})
+        sleep(0.1)  # Keep the sleep if it's necessary for rate limiting
         
+        text = Text(f"Feature: {feature_info['name']}", justify="left", style="bold yellow")
+        panel = Panel(text)
+        print(panel)
+        print(output.content)
+        print("\n", "="*100, "\n")
+        
+        return {'feature': feature_info['name'], 'report': output.content}
+    
+    def break_down(self, state: WorkingMemory) -> WorkingMemory:
+        dataset_info = {
+            'dataset_title': state['dataset_representation'].name,
+            'dataset_description': state['dataset_representation'].description
+        }
+        
+        # Process features in parallel
+        with ThreadPoolExecutor() as executor:
+            future_to_feature = {
+                executor.submit(self.process_feature, feature, dataset_info, self.llm): feature
+                for feature in state['dataset_representation'].features
+            }
+            
+            list_outputs = []
+            for future in as_completed(future_to_feature):
+                list_outputs.append(future.result())
 
         state['generations']['feature_reports'] = list_outputs
 
         # Process label
-        label = state['dataset_representation'].label
-        input_message = label.as_dict()
-        input_dict = {
-            "input": input_message,
-            'label_name': label.name,
-            'dataset_title': state['dataset_representation'].name,
-            'dataset_description': state['dataset_representation'].description
-        }
-        label_prompt = get_prompt_for_label_explanation(state['semantic_memory'])
+        label_info = state['dataset_representation'].label.as_dict()
+        label_prompt = get_prompt_for_label_explanation(label_info, dataset_info)
         label_chain = label_prompt | self.llm
-        label_output = label_chain.invoke(input_dict)
-        text = Text(f"Label: {label.name}", justify="left", style="bold yellow")
+        label_output = label_chain.invoke({})
+        text = Text(f"Label: {label_info['name']}", justify="left", style="bold yellow")
         panel = Panel(text)
         print(panel)
         print(label_output.content)
@@ -188,17 +195,31 @@ class DecisionProcedure:
         
         state['generations']['label_report'] = label_output.content
 
-        
         return state
+
 
     def compile_(self, state: WorkingMemory) -> WorkingMemory:
         dataset_representation = state['dataset_representation']
         feature_outputs = state['generations']['feature_reports']
         label_report = state['generations'].get('label_report', "No specific report available for the label.")
+
+
+        # Overview report generation
+        # print("waiting for 1 seconds to avoid rate limiting")
+        # sleep(1)
+        sleep(0.01)
+        
+        overview_start = time.time()
         overview_report_prompt = get_overview_report_prompt(dataset_representation, feature_outputs, label_report)
         chain = overview_report_prompt | self.llm
-        overview_output = chain.invoke({})
-        overview_report = overview_output.content
+        # overview_output = chain.invoke({})
+        # overview_report = overview_output.content
+        overview_report = "Overview report"
+        state['generations']['overview_report'] = overview_report
+        overview_end = time.time()
+        print(f"Overview report generation took {overview_end - overview_start:.4f} seconds")
+
+
         state['generations']['overview_report'] = overview_report
         dataset_title = state['semantic_memory'].reference_dataset.description['DATASET_TITLE']
         dataset_description = state['semantic_memory'].reference_dataset.description['DATASET_DESCRIPTION']
@@ -217,15 +238,22 @@ class DecisionProcedure:
         print(panel)
         print(final_report.generate_markdown_report())
         return state
+    
+  
 
     def run(self, initial_state: WorkingMemory):
+        # langfuse_handler = CallbackHandler()
         for output in self.decision_procedure.stream(initial_state):
             for node_name, state in output.items():
                 skip_keys = ['semantic_memory', 'slow_tools_results', 'fast_tools_results']
-                print("State: ", {k: value for k, value in state.items() if k not in skip_keys})
+                # print("State: ", {k: value for k, value in state.items() if k not in skip_keys})
 
         return output
-
+    
+    def run_batch(self, initial_state: WorkingMemory):
+        output = self.decision_procedure.invoke(initial_state)
+        
+        return output
 
 class EnhancedStateGraph(StateGraph):
     def add_node(self, node_name, function):

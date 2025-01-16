@@ -3,38 +3,27 @@ Here is the report in markdown format:
 **Executive Summary**
 =====================
 
-The dataset provided contains information about borrowers and their likelihood of defaulting on a loan. The dataset includes 11 features: Age, Income, Credit Score, Loan Amount, Loan Term, Interest Rate, Employment Length, Home Ownership, Marital Status, Dependents, and Loan Default. The dataset is used to predict the likelihood of loan default.
+The dataset provided contains information about loan applicants, including their demographic and financial characteristics. The goal is to identify the features that are most relevant to predicting loan default. The analysis reveals that the most significant features are Income, Employment Length, Credit Score, and Marital Status.
 
 **Dataset Synopsis**
-==================
+-------------------
 
-The dataset contains 1000 samples, with each sample representing a borrower. The features are:
-
-* **Numerical Features**: Age, Income, Credit Score, Loan Amount, Loan Term, Interest Rate, Employment Length
-* **Categorical Features**: Home Ownership, Marital Status, Dependents
-* **Label**: Loan Default (0 for no default, 1 for default)
+The dataset contains 1000 samples with 11 features: Age, Income, Credit Score, Loan Amount, Loan Term, Interest Rate, Employment Length, Home Ownership, Marital Status, Dependents, and Loan Default. The features are a mix of numerical and categorical variables.
 
 **Tools Analysis**
-================
+-----------------
 
-The dataset was analyzed using various tools to identify potential drifts in the data. The results are as follows:
+The tools used for analysis are:
 
-* **Drift Detection**: The Kullback-Leibler divergence test was used to detect drifts in the data. The results show that the following features have significant drifts:
-	+ Age
-	+ Credit Score
-	+ Employment Length
-	+ Income
-	+ Interest Rate
-	+ Loan Amount
-	+ Loan Term
-* **Shap Values**: The SHAP values were calculated to analyze the importance of each feature in predicting loan default. The results show that the most important features are:
-	+ Income
-	+ Loan Term
-	+ Age
-	+ Credit Score
-	+ Employment Length
+* **NUM_SAMPLES**: 1000
+* **FEATURES**: ['Age', 'Income', 'Credit Score', 'Loan Amount', 'Loan Term', 'Interest Rate', 'Employment Length', 'Home Ownership', 'Marital Status', 'Dependents']
+* **NUMERICAL_FEATURES**: ['Age', 'Income', 'Credit Score', 'Loan Amount', 'Loan Term', 'Interest Rate', 'Employment Length']
+* **CATEGORICAL_FEATURES**: ['Home Ownership', 'Marital Status', 'Dependents']
+* **LABEL**: 'Loan Default'
+* **COLUMN_TYPES**: {'Age': 'int', 'Income': 'float', 'Credit Score': 'int', 'Loan Amount': 'float', 'Loan Term': 'int', 'Interest Rate': 'float', 'Employment Length': 'int', 'Home Ownership': 'int', 'Marital Status': 'int', 'Dependents': 'int', 'Loan Default': 'int'}
+* **COLUMN_VALUES**: {'Age': 'Ranging from 18 to 70 years.', 'Income': 'Ranging from $20,000 to $150,000.', 'Credit Score': 'Ranging from 300 to 850.', 'Loan Amount': 'Ranging from $1,000 to $50,000.', 'Loan Term': 'Ranging from 12 to 60 months.', 'Interest Rate': 'Ranging from 3.5% to 25%.', 'Employment Length': 'Ranging from 0 to 40 years.', 'Home Ownership': {'0': 'Rent', '1': 'Own', '2': 'Mortgage'}, 'Marital Status': {'0': 'Single', '1': 'Married', '2': 'Divorced', '3': 'Widowed'}, 'Dependents': 'Ranging from 0 to 5.', 'Loan Default': {'0': 'No default', '1': 'Default'}}
 
 **Conclusion**
-=============
+==========
 
-The analysis of the dataset reveals significant drifts in several features, indicating changes in the underlying distribution of the data. The SHAP values highlight the importance of certain features in predicting loan default. These findings can be used to improve the accuracy of loan default prediction models.
+The analysis reveals that the most significant features for predicting loan default are Income, Employment Length, Credit Score, and Marital Status. These features are likely to be important indicators of a borrower's ability to repay the loan. The dataset provides a comprehensive view of the loan applicants, including their demographic and financial characteristics.

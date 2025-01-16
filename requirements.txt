@@ -1,5 +1,4 @@
 langchain==0.2.2
-# langchain-openai==0.1.8
 langchain-core==0.2.2
 langchain-community==0.2.2
 ipywidgets==8.1.2
@@ -9,4 +8,6 @@ langgraph==0.0.60
 rich
 grandalf==0.8
 pygraphiz==1.12
+streamlit==1.27.0
+streamlit-option-menu==0.3.13
 # docarray==0.40.0
