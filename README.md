@@ -64,5 +64,5 @@ The architecture consists of several components:
 
 ## References
 
-- Paper in revision.
+- Paper accepted at AAMAS 2025
 
